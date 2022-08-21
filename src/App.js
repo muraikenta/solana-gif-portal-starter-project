@@ -1,5 +1,4 @@
 //App.js
-require("dotenv").config();
 import React, { useEffect, useState } from "react";
 import twitterLogo from "./assets/twitter-logo.svg";
 import "./App.css";
@@ -7,6 +6,7 @@ import idl from "./idl.json";
 import { Connection, PublicKey, clusterApiUrl } from "@solana/web3.js";
 import { Program, Provider, web3 } from "@project-serum/anchor";
 import kp from "./keypair.json";
+require("dotenv").config();
 
 // SystemProgramはSolanaランタイムへの参照です。
 const { SystemProgram, Keypair } = web3;
